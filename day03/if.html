@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If</title>
+</head>
+<body>
+    <script>
+        // if(조건식) {
+        //     // 조건이 true이면 실행
+        // }
+        
+        var 숫자;
+        숫자 = 5;
+        if(숫자 % 2 === 0) {
+            console.log(`입력한 숫자는 ${숫자}이고, 짝수입니다`);
+        }
+        else {
+            console.log(`입력한 숫자는 ${숫자}이고, 홀수입니다`)
+        }
+        // else에는 조건을 넣으면 안된다.
+        // 삼항연산자수식 : console.log(`입력한 숫자는 ${숫자}이고, ${숫자 % 2 == 0?'짝수':'홀수'}입니다`)
+
+
+        var 경력;
+        경력 = 11;
+
+        if(경력>10) {
+            console.log(`모시고 옵니다`)
+        }
+        else if (경력>5) {
+            console.log(`우선채용`)
+        }
+        else if (경력>1) {
+            console.log(`일반채용`) 
+        }
+        else {
+            console.log(`신입은 지원할 수 없습니다`)
+        }
+
+        // if문의 범위는 반드시 작아지는 순서대로 깎아 내려가야한다.
+        // 범위가 작게 시작할 경우 아래의 else if문을 다 먹어버리는 조건문이 되어버린다.
+    </script>
+</body>
+</html>

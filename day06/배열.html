@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <script>
+        // const student1 = '김정연';
+        // const student2 = '김진하';
+        // const student3 = '김지한';
+        // 배열이 길어지면 묶이지 않아 각자 다른 개체가 되며, 비효율적이다.
+
+        const studentNames = ['김정연','김진하','김지한','함차장','김유하']
+        // 대괄호에 묶여있고, 쉼표로 개체가 구분되는 형태를 배열이라고 한다.
+
+        // 콘솔에 '김지한'만 출력하고 싶다면
+        console.log(studentNames[2])
+
+        // 배열의 인덱스를 활용해 특정 요소를 사용할 수 있다.
+        // 인덱스는 0부터 시작하고, 배열 선언할 때 대괄호 [ ] 사용했던 것과 같이
+        // 변수명[인덱스] 형태로 사용하면 된다! 
+
+
+        // 깃허브와 비슷하게 배열에 새로운 요소를 넣고싶다면 push() 메서드를 이용하면 된다.
+        studentNames.push('김은호');
+        studentNames.push('박건후');
+
+        console.log(studentNames)
+
+        // 맨 뒤의 요소를 사용 (stack)
+        console.log(studentNames.pop())
+
+        console.log(studentNames)
+
+        // 맨 앞에 요소를 추가하고 싶을 때
+        console.log('test',studentNames.unshift('김유리'));
+        console.log(studentNames)
+
+        // 맨 앞의 요소를 사용 (queue)
+        console.log(studentNames.shift())
+    </script>
+</body>
+</html>

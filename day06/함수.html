@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        // 함수는 매개변수와 리턴을 선택적으로 사용할 수 있다.
+
+        function add3AndExportConsole(number){
+            console.log(number+3)
+        }
+
+        add3AndExportConsole(10)
+
+        // console.log('출력값')
+        // alert('메세지')
+
+        function add3(number){
+            return number + 3
+        }
+
+        const 계산값 = add3(100);
+
+        function 출생년도계산기 (나이){
+            const date = new Date();
+            const 현재년도 = date.getFullYear();
+
+            return 현재년도 - 나이 + 1;
+        }
+
+        const 강사출생년도 = 출생년도계산기(32);
+        const 진하출생년도 = 출생년도계산기(8);
+        const 이얀꼬꼬출생년도 = 출생년도계산기(6);
+
+        console.log(강사출생년도)
+        console.log(진하출생년도)
+        console.log(이얀꼬꼬출생년도)
+    </script>
+</body>
+</html>
